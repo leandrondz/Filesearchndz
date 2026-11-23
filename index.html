@@ -2569,7 +2569,7 @@ function cloudLoad() {
 
 
 const GEMINI_API_KEY = "AQ.Ab8RN6IJx0wSVlmyCHKiBW3YGHhXzJuLmJqDRZ5wkXfeUa-clQ";
-const GEMINI_MODEL = 'gemini-2.5-flash';
+const GEMINI_MODEL = 'gemini-3.8-flash';
 const GEMINI_GEN_URL    = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent?key=${GEMINI_API_KEY}`;
 const GEMINI_UPLOAD_URL = `https://generativelanguage.googleapis.com/upload/v1beta/files?key=${GEMINI_API_KEY}`;
 const GEMINI_FILE_URL   = name => `https://generativelanguage.googleapis.com/v1beta/${name}?key=${GEMINI_API_KEY}`;
@@ -4052,8 +4052,8 @@ loadDemo();
 <!-- User Dropdown -->
 <div id="userDropdown">
   <div class="ud-header">
-    <button id="userAvatar" onclick="toggleUserDropdown()"></button>
-    <button id="userAvatar" onclick="toggleUserDropdown()"></button>
+    <div class="ud-name" id="udName"></div>
+    <div class="ud-email" id="udEmail"></div>
   </div>
   <button class="ud-row" onclick="cloudSave()">
     <span class="ud-icon"></span>
